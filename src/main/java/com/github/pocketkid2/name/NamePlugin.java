@@ -14,18 +14,15 @@ public class NamePlugin extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
-		// Register Commands
 		getCommand("name").setExecutor(new NameCommand(this));
 		getCommand("lore").setExecutor(new LoreCommand(this));
 
-		// Log status
-		getLogger().info("Done!");
+		getLogger().info("Enabled!");
 	}
 
 	@Override
 	public void onDisable() {
-		// Log status
-		getLogger().info("Done!");
+		getLogger().info("Disabled!");
 	}
 
 	public void setName(ItemStack stack, String name) {

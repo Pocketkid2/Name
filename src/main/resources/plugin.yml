@@ -3,6 +3,7 @@ version: ${version}
 main: ${groupId}.${artifactId}.${name}Plugin
 description: ${description}
 author: ${author}
+api-version: 1.18
 commands:
     name:
         description: Change or reset an item name!
